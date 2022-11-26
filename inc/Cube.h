@@ -1,18 +1,11 @@
-#include <cmath>
-
-class Cube
+namespace Cubens
 {
-private:
-    double m_side_len;
-public:
-    Cube(double side_len)
+    class Cube
     {
-        m_side_len = side_len;
-    }
+    private:
+        double m_side_len;
+    public:
+        void get_diagonal();
+    };
 
-    double get_diagonal()
-    {
-        double a = pow((m_side_len * m_side_len * 2), 0.5);
-        return pow((a * a + m_side_len * m_side_len), 0.5);
-    }
-};
+}
