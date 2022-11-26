@@ -1,7 +1,7 @@
 #include <cmath>
 #include "Cube.h"
-using namespace Cubens;
-Cube(side_len){
+namespace Cubens{
+Cube::Cube(side_len){
     m_side_len = side_len;
 }
 double Cube::get_diagonal(){
